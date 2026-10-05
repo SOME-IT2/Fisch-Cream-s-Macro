@@ -64,7 +64,7 @@ If (!sub_confirmation) {
 IniWrite, 1, Settings.ini, Fisch, sub_confirmation
 */
 ; Read the "Control" value from the Settings.ini (default is 0) and set it for the macro's control parameter
-;IniRead, Control, Settings.ini, Fisch, Control, 0 
+;IniRead, Control, Settings.ini, Fisch, Control, 0.6
 ;IniWrite, %Control%, Settings.ini, Fisch, Control ; Autosave for Control
 
 ; Activate the Roblox window for the macro to work with
@@ -146,7 +146,7 @@ UpdateTooltip() {
 }
 tooltip, Made By Cweamya, 100, %TooltipPosY1%, 1
 tooltip, Runtime: 0h 0m 0s, 100, %TooltipPosY2%, 2
-tooltip, Press "Space" to Exit, 100, %TooltipPosY4%, 3
+tooltip, Press "F6" to Exit, 100, %TooltipPosY4%, 3
 Reels()
 LastShakeTimer := A_TickCount
 Loop {
